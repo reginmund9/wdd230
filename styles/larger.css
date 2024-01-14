@@ -1,0 +1,21 @@
+/* large screens */
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        display: grid;
+        grid-column: 1/3;
+    }
+}
+
