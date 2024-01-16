@@ -106,9 +106,15 @@
     </main>
     </div>
     <footer class="footer">
-        <p id="copy">&copy; <span id="current-year"></span> | Ramon Vargas | Bolivia</p>
-        <p class="highlight">Last Modification: <span id="last-modified" class="highlight"></span></p>
+        <p>
+            &copy; <span id="currentYear"></span> | Ramon Vargas | Bolivia
+            <!-- Optionally, a flag image -->
+          </p>
+          <p id="lastModified"></p>
     </footer>
-    <script>document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;</script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
 </body>
 </html>
