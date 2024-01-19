@@ -1,11 +1,16 @@
 /* large screens */
 @media (min-width: 640px) {
+    #hamburger-btn {
+        display: none; /* Hide the mobile menu on larger screens */
+    }
+
     nav ul {
+        flex-direction: row;
         display: flex;
-        
     }
 
     nav ul li {
+        display: block;
         flex: 1 1 100%;
     }
 
@@ -17,5 +22,6 @@
         display: grid;
         grid-column: 1/3;
     }
+    
 }
 
