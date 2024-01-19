@@ -44,12 +44,13 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 3, 4, 5);
 }
 
 .card {
     background-color: #3852c5;
     color: #fff;
-    padding: 15px;
+    border: 1px solid #ddd;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 20px;
@@ -145,4 +146,11 @@ nav a:hover {
 	width: 100%;
 }*/
 
-
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}

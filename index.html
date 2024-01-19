@@ -15,7 +15,7 @@
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet"> 
-
+    
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,11 @@
   <header>
     <img src="images/profile.png" alt="Ramon Vargas Profile" width="75" height="100">
     <span>Ramon Vargas</span>
+    <div id="mode">
+      🕶️
+    </div>
   </header>
+
   <nav>
     <button id="hamburger-btn"></button>
     <ul>
@@ -43,8 +47,8 @@
     <section>
       <h2 class="card">Learning Activities</h2>
       <ul>
-        <li>Week 01: <a href="#">Layout | Media Query | JS </a></li>
-        <li>Week 02<a href="#"></a></li>
+        <li>Week 01: <a href="week01/holygrail.html">Layout | </a> <a href="week01/media-query.html">Media Query</a></li>
+        <li>Week 02: <a href="week02/design.html">Design |</a></li>
         <li>Week 03<a href="#"></a></li>
         <li>Week 04<a href="#"></a></li>
         <li>Week 05<a href="#"></a></li>
@@ -68,6 +72,7 @@
     document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
   </script>
   <script src="scripts/responsive-menu.js"></script>
+  <script src="scripts/dark-mode.js"></script>
 </body>
 </html>
 
