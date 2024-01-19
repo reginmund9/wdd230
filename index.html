@@ -9,6 +9,8 @@
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet"> 
+    
+    <link rel="icon" href="favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,7 @@
     <span>Ramon Vargas</span>
   </header>
   <nav>
+    <button id="hamburger-btn"></button>
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="#">Chamber</a></li>
@@ -56,6 +59,7 @@
     document.getElementById('currentYear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
   </script>
+  <script src="scripts/responsive-menu.js"></script>
 </body>
 </html>
 
