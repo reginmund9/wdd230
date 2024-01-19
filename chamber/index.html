@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Jordan Eldredge">
+    <meta name="description" content="Chamber of Commerce project for Jordan Eldredge in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="scc-favicon.ico">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="WDD230 Chamber of Commerce Project">
+    <meta name="og:description" content="Chamber of Commerce Project for Ramon Vargas in WDD230 at BYU-I Online.">
+    <meta name="og:image" content="https://">
+    <meta name="og:url" content="https://reginmund9.github.io/wdd230/chamber">
+
+    <title>WDD 230 - Chamber of Commerce - Ramon Vargas</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
+    <!-- Start of content -->
+    <div class="page-content"> 
+    <span id="banner"></span>
+    <header>
+        <img id="header-logo" src="../chamber/images/escudostarija.png" alt="Sandy City Chamber Logo" width="100" height="100">
+        <h1 id="header-company">Tarija City Chamber</h1>
+        <span id="current-date"></span>
+        <div id="header-links">
+            <a href="https://www.facebook.com/"><img id="link-facebook" src="../chamber/images/facebook.png" alt="Facebook Logo" width="64" height="64"></a>
+            <a href="https://www.linkedin.com/"><img id="link-linkedin" src="../chamber/images/twitter.png" alt="LinkedIn Logo" width="64" height="64"></a>
+        </div>
+    </header>  
+
+    <nav>
+        <ul class="navigation">
+            <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
+            <li class="nav-li"><a id="nav-current" href="index.html">Home</a></li> <!-- Current Page -->
+            <li class="nav-li"><a href="discover.html">Discover</a></li> 
+            <li class="nav-li"><a href="directory.html">Directory</a></li> 
+            <li class="nav-li"><a href="join.html">Join</a></li> 
+        </ul>
+    </nav>
+
+    <main class="home-grid">
+        <div class="call-to-action">
+            <picture id="hero-image">
+                <source media="(max-width: 600px)" srcset="../chamber/images/grapes.jpg">
+                <source media="(min-width: 600px) and (max-width: 1280px)" srcset="../chamber/images/grapes.jpg">
+                <source media="(min-width: 1280px)" srcset="../chamber/images/grapes.jpg">
+                <img data-src="../chamber/images/wasatch-600x400.webp" src="../chamber/images/grapes.jpg" alt="Image of Sandy, Utah" width= "600" height="400">
+            </picture>
+            <h2 class="hero-title">Tarija City Welcomes You</h2>
+
+        </div>
+        <div class="events">
+            <h3 class="box-title">Events</h3>
+            <h4 class="box-subtitle">Utah Golf & Travel Expo at the Mountain America Expo Center</h4>
+            <p class="box-content">There is an upcoming event in Sandy, Utah on February 24-25, 9am-7pm. If you are a lover of golf or resorts, Be sure to check it out! </p>
+        </div>
+        <div class="weather">
+            <h3 class="box-title">Weather</h3>
+            <div class="box-content">
+                <span id="weather-info"></span>
+                <h4>Sandy, Utah</h4>
+                <p><span id="current-temp">__</span>&deg;F</p>
+                <figure>
+                    <img id="weather-icon" src="../chamber/images/placeholder/placeholder-64x64.webp" alt="Weather Icon" width="64" height="64">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="spotlight">
+            <h3 class="box-title">Spotlight</h3>
+            <div class="spotlight-grid">
+                <div id="spotlight-1" class="sub-box"></div>
+                <div id="spotlight-2" class="sub-box"></div>
+                <div id="spotlight-3" class="sub-box"></div>
+            </div>
+            
+        </div>
+        <div class="join">
+            <h3 class="box-title">Join</h3>
+            <p class="box-content">Want to be part of our community? Apply for our Chamber of Commerce today! We look forward to working with you.</p>
+            <button id="join-button" onclick="window.location.href='join.html';">Join</button>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="info-company"> 
+            <img id="footer-logo" src="../chamber/images/erques.jpg" alt="Sandy City Chamber Logo" width="180" height="180">
+            <h3 id="footer-company">Tarija City Chamber</h3>
+        </div>
+        <div class="info-contact">
+            <p id="company-address"><strong>Calle Bolivar Nro.233 - Piso 1, entre Méndez y Suipacha</strong></p>
+            <p id="company-email"><strong>contactus@tarijacitychamber.bo</strong></p>
+            <p id="company-phone"><strong>(801)-000-0000</strong></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="index.html">Location Map</a></p>
+        </div>
+
+        <div class="info-stats">
+            <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span></p>
+            <p id="credits"></p>
+            <p id="copy">&copy; <span id="current-year"></span> Tarija City Chamber | Ramon Vargas | Last Modification: <span id="last-modified" class="highlight"></span></p>
+        </div>
+    </footer>
+    <!-- Page Scripts -->
+    <script src="../chamber/scripts/get-dates.js"></script>
+    <script src="../chamber/scripts/get-weekday.js"></script> 
+    <script src="../chamber/scripts/last-visited.js"></script>
+    <script src="../chamber/scripts/responsive-menu.js"></script>
+    <script src="../chamber/scripts/business-spotlight.js"></script>
+    <script src="../chamber/scripts/weather.js"></script>
+    </div> <!-- End of content -->
+</body>
+</html>
