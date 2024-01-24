@@ -48,10 +48,12 @@
     <section>
       <h2 class="card">Learning Activities</h2>
       <ul>
-        <li>Week 01: <a href="week01/holygrail.html">Layout | </a> <a href="week01/media-query.html">Media Query</a></li>
-        <li>Week 02: <a href="week02/design.html">Design |</a><a href="https://codepen.io/Cesar-the-scripter/pen/ExMmBXG">Responsive Menu |</a>
+        <li>Week 01: <a href="week01/holygrail.html">Layout |</a> <a href="week01/media-query.html">Media Query</a></li>
+        <li>Week 02: <a href="week02/design.html">Design |</a> <a href="https://codepen.io/Cesar-the-scripter/pen/ExMmBXG">Responsive Menu |</a>
           <a href="week02/bom.html">DOM</a></li>
-        <li>Week 03: <a href="week03/images/landscape.webp">WebP |</a></li>
+        <li>Week 03: <a href="week03/images/landscape.webp">WebP |</a> <a href="week03/lazyload.html">Lazy Load |</a>
+          <a href="week03/responsive-images.html">Responsive Images |</a>
+          <a href="week03/bom.html">Web Storage API</a></li>
         <li>Week 04<a href="#"></a></li>
         <li>Week 05<a href="#"></a></li>
         <li>Week 06<a href="#"></a></li>
@@ -64,15 +66,13 @@
   </main>
   <footer>
     <p>
-      &copy; <span id="currentYear"></span> Ramon Vargas, Bolivia
+      &copy; <span id="current-year"></span> Ramon Vargas, Bolivia
       <!-- Optionally, a flag image -->
     </p>
-    <p id="lastModified"></p>
+    <p id="last-modified"></p>
   </footer>
-  <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-  </script>
+
+  <script src="scripts/getDates.js"></script>
   <script src="scripts/responsive-menu.js"></script>
   <script src="scripts/dark-mode.js"></script>
 </body>
