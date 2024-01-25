@@ -33,11 +33,11 @@ header span {
     color: black;
 }
 
-header,
-main {
+header {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
 main {
     max-width: 800px;
     margin: 0 auto;
