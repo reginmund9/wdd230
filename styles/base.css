@@ -73,7 +73,9 @@ h1 {
 h2 {
     text-align: center;
 }
-
+section p {
+    text-align: center;
+}
 nav {
 	
 	margin: auto;
@@ -161,4 +163,33 @@ nav a:hover {
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
+}
+
+
+#hero {
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 2em;
+    font-weight: 600;
+    background: radial-gradient(#fff, #4d5897);
+    border: 1px solid rgba(0, 0, 0, .75);
+    opacity: 0.75;
+}
+
+#hero-img {
+    width: 100%; height: auto;
+    margin-top: 10px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px 15px 15px 15px;
+
 }

@@ -29,11 +29,14 @@
 </head>
 <body>
   <header>
-    <img src="images/profile.png" alt="Ramon Vargas" width="75" height="100">
+
+    <source media="(max-width: 75px)" srcset="images/profile.webp" width="75" height="100">
+    <img src="images/profile.webp" alt="Ramon Vargas" width="75" height="100">
     <span>Ramon Vargas</span>
     <div id="mode">
       🕶️
     </div>
+
   </header>
 
   <nav>
@@ -46,6 +49,17 @@
     </ul>
   </nav>
   <main>
+    
+    <section id="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-small" width="400" height="400">
+        <source media="(min-width: 400px) and (max-width: 960px)" srcset="images/washington_dc_temple.webp">
+        <source media="(min-width: 960px)" srcset="images/hero-large.webp">
+        <img id="hero-img" src="images/washington_dc_temple.webp" alt="Picture of the Draper Utah Temple" loading="lazy" width="960" height="400">
+      </picture>
+      <div id="hero-text">Washington DC Temple</div>
+    </section>
+
     <h1>WDD 230: Web Frontend Development</h1>
     <section>
       <h2 class="card">Learning Activities</h2>
@@ -61,11 +75,19 @@
         <li>Week 06<a href="#"></a></li>
       </ul>
     </section>
+
     <section>
       <h2 class="card">Information</h2>
+      <p>Visit Count: <span id="visit-count">0</span></p>
     </section>
 
   </main>
+
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d946188.863355847!2d-65.19384887814344!3d-22.124059817597924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x9406380bee269fbf%3A0xf8c9771ffb09d1c3!2sTarija%2C%20Bolivia!3m2!1d-21.5177889!2d-64.72956669999999!4m5!1s0x94057fe710b57047%3A0xbdddf2c705c2f37f!2sBermejo%2C%20Bolivia!3m2!1d-22.7294254!2d-64.3393176!5e0!3m2!1sen!2scr!4v1706165785231!5m2!1sen!2scr" 
+  width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
   <footer>
     <p>
       &copy; <span id="current-year"></span> Ramon Vargas, Bolivia
@@ -77,6 +99,7 @@
   <script src="scripts/getDates.js"></script>
   <script src="scripts/responsive-menu.js"></script>
   <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/visit-counter.js"></script>
 </body>
 </html>
 
