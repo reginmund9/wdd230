@@ -287,7 +287,7 @@ footer {
 
 .info-company, .info-contact, .info-stats {
     text-align: center;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 footer a, footer a:visited {color: var(--white);}
@@ -309,11 +309,7 @@ strong {
     color: var(--accent2);
 }
 
-#visit-count, #visit-since {
-    color: var(--white);
-    font-weight: 500;
-    letter-spacing: 1px;
-}
+
 
 /* Home Page Content */
 
