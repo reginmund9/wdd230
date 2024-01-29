@@ -339,7 +339,7 @@ strong {
 }
 
 #hero-image img {
-    width: 100%; height: auto;
+    width: 100%; height: auto;  /*RESPONSIVE IMAGE*/
     max-width: 1920px;
     padding: 0px;
     background-color: lightgray;
@@ -425,8 +425,9 @@ strong {
 /* Discover Page Content */
 
 .discover-grid {
-    display: block;
+    display: block;  
 }
+
 
 .discover-box {
     border: 1px solid var(--background);
@@ -445,6 +446,7 @@ strong {
 }
 
 .discover-grid img {
+    width: 100%; height: auto; /*RESPONSIVE IMAGE*/
     transition: 1s;
     max-width: 600px;
     background-color: lightgray;
