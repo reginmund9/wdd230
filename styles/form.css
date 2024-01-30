@@ -1,0 +1,61 @@
+/* Add these styles to your existing CSS files */
+
+:root {
+    --main-bg-color: #f8f8f8;
+    --main-text-color: #333;
+    --form-padding: 20px;
+}
+  
+main {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: var(--form-padding);
+}
+  
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+form div {
+    margin-bottom: 15px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="range"],
+  button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+input[type="range"] {
+    width: calc(100% - 20px); /* Adjust for the output width */
+}
+  
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+  
+output {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+  
