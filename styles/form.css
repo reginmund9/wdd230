@@ -42,7 +42,11 @@ input[type="text"],
 input[type="range"] {
     width: calc(100% - 20px); /* Adjust for the output width */
 }
-  
+
+
+
+
+ 
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;
