@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Chamber of Commerce - Ramon Vargas</title>
+    
+    <meta name="author" content="Ramon Vargas">
+    <meta name="description" content="Chamber of Commerce project for Ramon Vargas in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet"> 
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="WDD230 Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.antenainfinita.com/wp-content/uploads/2021/04/tarijita1.jpg">
+    <meta property="og:url" content="https://reginmund9.github.io/wdd230/chamber/index.html">
+
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
+    <!-- Start of content -->
+    
+    <span id="banner" style="display:none;"></span>
+    <header>
+        <img id="header-logo" src="images/escudostarija.webp" alt="Tarija City Chamber Logo" width="100" height="100">
+        <h1 id="header-company">Tarija Cercado Chamber of Commerce</h1>
+        <span id="current-date"></span> 
+        <div id="header-links">
+            <a href="https://www.facebook.com/"><img id="link-facebook" src="images/facebook.png" alt="Facebook Logo" width="64" height="64"></a>
+            <a href="https://www.twitter.com/"><img id="link-twitter" src="images/twitter.png" alt="Twitter Logo" width="64" height="64"></a>
+        </div>
+    </header>  
+
+    <nav>
+        <ul class="navigation">
+            <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
+            <li class="nav-li"><a id="nav-current" href="index.html">Home</a></li> <!-- Current Page -->
+            <li class="nav-li"><a href="discover.html">Discover</a></li> 
+            <li class="nav-li"><a href="directory.html">Directory</a></li> 
+            <li class="nav-li"><a href="join.html">Join</a></li>  
+        </ul>
+    </nav>
+
+    <main class="join-grid">
+        <div id="form-area"> 
+            <h2 id="form-title">Tarija City Chamber Form</h2>
+            <p id="form-instructions">Please complete the form below so we may review your application. Required fields are marked with an asterisk.</p>
+
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label><span class="label-title req">First Name</span>
+                    <input type="text" id="info-first" name="first-name" required>
+                </label>
+                <label><span class="label-title req">Last Name</span>
+                    <input type="text" id="info-last" name="first-name" required>
+                </label>
+                <label><span class="label-title">Business Title</span>
+                    <input type="text" id="info-position" name="position" minlength="7" pattern="^[a-zA-Z]+[a-zA-Z- ]*[a-zA-Z]$" 
+                    title="Business Title must be atleast 7 characters in length and only contain letters A-Z, hyphens, and spaces.">
+                </label>
+                <label><span class="label-title req">Business Name</span>
+                    <input type="text" id="info-company" name="company" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label><span class="label-title req">Email</span>
+                    <input type="email" id="info-email" name="email" placeholder="example@email.com" title="Provide an email address." required>
+                </label>
+                <label><span class="label-title req">Phone Number</span>
+                    <input type="tel" id="info-phone" name="phone" title="Phone number must be entered without spaces, hyphens, or underscores." required>
+                </label>
+            </fieldset>
+
+            <fieldset id="memberships">
+                <legend>Membership Level</legend>
+                <div id="mem-selection">
+                <h2 class="label-title">Choose a Membership Level</h2>
+                <p class="p-hint">Select one of the following memberships to apply for.</p>
+                    <label class="label-radio"><input type="radio" id="mem-np" name="membership" value="beginner">NP</label>
+                    <label class="label-radio"><input type="radio" id="mem-bronze" name="membership" value="beginner" checked="checked">Bronze</label>
+                    <label class="label-radio"><input type="radio" id="mem-silver" name="membership" value="intermediate">Silver</label>
+                    <label class="label-radio"><input type="radio" id="mem-gold" name="membership" value="advanced">Gold</label>
+                </div>
+                <div id="mem-description">
+                    <p>These membership levels have increasing costs as well as increased benefits per level. 
+                        Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Buisness Description</legend>
+                <h2 class="label-title">Describe your Business</h2>
+                <p class="p-hint">Write a brief description about your company.</p>
+                <label><textarea id="business-description" rows="10" cols="40"></textarea></label>
+            </fieldset>
+
+            <input type="hidden" name="form-date" id="display-form-date" value="">
+            <input type="submit" id="submit-button" value="Submit Application">
+        </form>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="info-company"> 
+            <img id="footer-logo" src="images/erques.jpg" alt="Tarija City Chamber logo" width="180" height="180">
+            <h3 id="footer-company">Tarija City Chamber</h3>
+            <h4 id="sidebar-content"></h4>
+        </div>
+        <div class="info-contact">
+            <p id="company-address"><strong>Calle Bolivar 233 - Floor 1, between Méndez and Suipacha</strong></p>
+            <p id="company-email"><strong>contactus@tarijacitychamber.bo</strong></p>
+            <p id="company-phone"><strong>(801)-000-0000</strong></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="index.html">Location Map</a></p>
+        </div>
+
+        <div class="info-stats">
+            <p id="copy">&copy; <span id="current-year"></span> Tarija City Chamber | Ramon Vargas | Last Modification: <span id="last-modified" class="highlight"></span></p>
+        </div>
+    </footer>
+
+    <!-- Page Scripts -->
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/lastvisited.js"></script>
+    
+</body>
+</html>
