@@ -70,9 +70,26 @@
     .discover-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 1rem;
+        grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
     }
+    
+    .discover-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .sidebar {
+        grid-column: 2/3;
+        grid-row: 1/7;
+        background-color: #fdf4ef;
+        margin-bottom: 60px;
+        
+    }
+
+    
+
     
 
     /* Join Page Content */
