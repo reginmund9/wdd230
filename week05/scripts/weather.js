@@ -1,18 +1,20 @@
-const apiKey = 'bb06f83ae63888ef53975084692c8460';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=${apiKey}`;
+// Selecting HTML elements
+const currentTemp = document.getElementById('current-temp');
+const weatherIcon = document.getElementById('weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-// select HTML elements in the document
-//const currentTemp = document.querySelector("#current-temp");
-//const weatherIcon = document.querySelector("#weather-icon");
-//const captionDesc = document.querySelector("figcaption");
+// Valid URL string for the OpenWeatherMap API
 
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,Germany&units=imperial&appid=cbea8e3eb32487df0b2b7a106681ead9';
+
+// Define an asynchronous function to fetch data from the API
 async function apiFetch() {
   try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);
-      displayResults(data);
+      console.log(data); // Testing only
+      displayResults(data); // Call the displayResults function with fetched data
     } else {
       throw Error(await response.text());
     }
@@ -21,30 +23,17 @@ async function apiFetch() {
   }
 }
 
-function displayResults(weatherData) {
-  const weatherInfoElement = document.getElementById('weather-info');
-  const temp = weatherData.main.temp.toFixed(0);
-  const iconsrc = weatherData.weather[0].icon;
-  const desc = weatherData.weather[0].description;
-  //currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  //weatherIcon.setAttribute("src", iconsrc);
-  // weatherIcon.setAttribute("alt", desc);
-  //captionDesc.textContent = desc;
+// Invoke the apiFetch function
+apiFetch(); 
 
-  const htmlContent = `
-    <p>The current temperature in Fairbanks, Alaska is <strong>${temp}°F</strong></p>
-    <h2>Current Condition</h2>
-    <figure>
-      <img class="weather-img" alt="Weather icon" src="https://openweathermap.org/img/wn/${iconsrc}@2x.png">
-      <img src="" alt="" id="weather-icon">
-      <figcaption>${desc}</figcaption>
-    </figure>
-  `;
-
-  weatherInfoElement.innerHTML = htmlContent;
-
-
-
+// Define the displayResults function to update HTML content with fetched data
+function displayResults(data) {
+  // Update current temperature
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  // Update weather icon source
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', data.weather[0].description);
+  // Update weather description
+  captionDesc.textContent = `${data.weather[0].description}`;
 }
-
-apiFetch();
