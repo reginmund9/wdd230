@@ -24,7 +24,7 @@ fetch(requestURL)
 
     h4.textContent = `${business.name}`;
   
-    p1.innerHTML = business.address + "<br>Vancouver, WA 98661<br>" + business.phone;
+    p1.innerHTML = business.address + "<br><br>" + business.phone;
 
     p2.textContent = business.membership;
 
