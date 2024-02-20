@@ -94,6 +94,7 @@ header {
 
 #header-logo {
     grid-column: 1/2; grid-row: 1/2;
+    width: auto;
 }
 
 #header-company {
@@ -109,7 +110,7 @@ header {
 }
 
 
-#link-facebook, #link-twitter {
+#link-facebook, #link-whatsapp {
     display: inline;
     width: 40px; height: 40px;
     padding: 4px;
@@ -203,8 +204,9 @@ figcaption a:active {
 
 img {
     display: block;
-    width: auto; height: auto;
+    width: 50%; 
     margin: 0 auto;
+    
 }
 
 hr {
@@ -316,10 +318,18 @@ strong {
 .call-to-action, .events, .weather, .join, .spotlight {
     border: 1px solid var(--background);
     width: auto; height: auto;
-    min-height: 200px;
+    min-height: 100px;
     margin-bottom: 20px;
     background-color: var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+
+
+aside{
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 
 .call-to-action {

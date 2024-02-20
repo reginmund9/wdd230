@@ -5,7 +5,7 @@
             "address": "123 Main Street",
             "phone": "360-555-1234",
             "website": "http://mundoindustrial.com.bo/",
-            "imageurl": "images/indus.JPG",
+            "imageurl": "images/indus.webp",
             "membership": "gold",
             "slogan": "Delivering excellence since 1990"
         },
@@ -14,7 +14,7 @@
             "address": "456 Ballivian Avenue",
             "phone": "360-555-5678",
             "website": "https://www.caribolivia.com/",
-            "imageurl": "images/cari.png",
+            "imageurl": "images/cari.webp",
             "membership": "silver",
             "slogan": "Innovating for a better future"
         },
@@ -23,7 +23,7 @@
             "address": "789 Suipacha Street",
             "phone": "360-555-9012",
             "website": "https://piltarija.com/",
-            "imageurl": "images/milk.png",
+            "imageurl": "images/milk.webp",
             "membership": "bronze",
             "slogan": "Engineering solutions that matter"
         },
@@ -32,7 +32,7 @@
             "address": "321 Rojas Street",
             "phone": "360-555-3456",
             "website": "https://www.facebook.com/",
-            "imageurl": "images/texGus.PNG",
+            "imageurl": "images/texGus.webp",
             "membership": "gold",
             "slogan": "Your partner for success"
         },
@@ -41,7 +41,7 @@
             "address": "654 Senac Street",
             "phone": "360-555-7890",
             "website": "https://www.vtbtourtarija.com/",
-            "imageurl": "images/turimo.jpg",
+            "imageurl": "images/turimo.webp",
             "membership": "gold",
             "slogan": "Empowering businesses worldwide"
         },
@@ -50,7 +50,7 @@
             "address": "987 Colon Street",
             "phone": "360-555-2345",
             "website": "https://www.vinosaranjuez.com/",
-            "imageurl": "images/wine.jpg",
+            "imageurl": "images/wine.webp",
             "membership": "silver",
             "slogan": "Driving innovation for a connected world"
         },
@@ -59,7 +59,7 @@
             "address": "456 Gamoneda Street",
             "phone": "360-555-6789",
             "website": "https://kohlberg.com.bo/",
-            "imageurl": "images/winekol.jpg",
+            "imageurl": "images/winekol.webp",
             "membership": "bronze",
             "slogan": "Quality products for every need"
         },
@@ -68,7 +68,7 @@
             "address": "789 Rosas Street",
             "phone": "360-555-0123",
             "website": "https://www.bnb.com.bo/PortalBNB/",
-            "imageurl": "images/bnb.jpg",
+            "imageurl": "images/bnb.webp",
             "membership": "gold",
             "slogan": "Innovate. Collaborate. Succeed."
         }

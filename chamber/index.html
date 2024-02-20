@@ -24,17 +24,18 @@
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
     <!-- Start of content -->
     
-    <span id="banner" style="display:none;"></span>
+    <span id="banner"></span>
+     
     <header>
         <img id="header-logo" src="images/escudostarija.webp" alt="Tarija City Chamber Logo" width="100" height="100">
         <h1 id="header-company">Tarija Cercado Chamber of Commerce</h1>
         <span id="current-date"></span> 
         <div id="header-links">
             <a href="https://www.facebook.com/"><img id="link-facebook" src="images/facebook.png" alt="Facebook Logo" width="64" height="64"></a>
-            <a href="https://www.twitter.com/"><img id="link-twitter" src="images/twitter.png" alt="Twitter Logo" width="64" height="64"></a>
+            <a href="https://web.whatsapp.com/"><img id="link-whatsapp" src="images/whatsapp.webp" alt="whatsapp Logo" width="64" height="64"></a>
         </div>
     </header>  
-
+     
     <nav>
         <ul class="navigation">
             <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
@@ -50,7 +51,7 @@
             <picture id="hero-image">
                 <source media="(max-width: 600px)" srcset="images/grapes.jpg">
                 <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/grapes.jpg">
-                <source media="(min-width: 1280px)" srcset="images/grapes.jpg">
+                <source media="(min-width: 1280px)" srcset="images/grapes.webp">
                 <img data-src="../chamber/images/wasatch-600x400.webp" src="images/grapes.jpg" alt="Image of Tarija, Cercado" width= "600" height="400">
             </picture>
             <h2 class="hero-title">Welcome to Tarija City</h2>
@@ -58,36 +59,50 @@
         </div>
         <div class="events">
             <h3 class="box-title">Events</h3>
-            <h4 class="box-subtitle">Center</h4>
-            <p class="box-content">There is an upcoming event in Tarija! </p>
+            <h4 class="box-subtitle">Vendimia Chapaca</h4>
+            <p class="box-content">The event will take place from February 25 to March 24, where you can enjoy 
+                different activities that enhance culture, tourism and especially the work of winegrowers.
+                The Chapaca Harvest festival scheduled for March 16, will be the most important event within the program, 
+                because it will feature the participation of national and international artists.
+            </p>
         </div>
+
         <div class="weather">
             <h3 class="box-title">Weather</h3>
             <div class="box-content">
                 <span id="weather-info"></span>
                 <h4>Tarija, Bolivia</h4>
-                <p><span id="current-temp">__</span>&deg;F</p>
+                <p><span id="current-temp"></span></p>
                 <figure>
                     <img id="weather-icon" src="#" alt="Weather Icon" width="64" height="64">
                     <figcaption></figcaption>
                 </figure>
             </div>
         </div>
-        <div class="spotlight">
-            <h3 class="box-title">Spotlight</h3>
-            <div class="spotlight-grid">
-                <div id="spotlight-1" class="sub-box"> 
-                    <p class="box-content">Empanadas Hamacas</p>
-                </div>
-                <div id="spotlight-2" class="sub-box">
-                    <p class="box-content">Resort Hotel Los Ceibos</p>
-                </div>
-                <div id="spotlight-3" class="sub-box">
-                    <p class="box-content">Sublimation TexGust</p>
-                </div>
+        
+
+        <aside class="aside">
+            <div class="spotlight" id="spotlight1">                
+                <section class="text-center spotlight">
+                  <h2>spotlight</h2>
+                </section>
             </div>
             
-        </div>
+            <div class="spotlight" id="spotlight2">  
+              <section class="text-center spotlight">
+                <h2>spotlight</h2>
+              </section>
+            </div>
+            
+            
+            <div class="spotlight" id="spotlight3">
+              <section class="text-center spotlight">
+                <h2>spotlight</h2>
+              </section>
+            </div>
+        </aside>
+
+
         <div class="join">
             <h3 class="box-title">Join</h3>
             <p class="box-content">Want to be part of our community? Apply for our Chamber of Commerce today! We look forward to working with you.</p>
@@ -97,7 +112,7 @@
     
     <footer>
         <div class="info-company"> 
-            <img id="footer-logo" src="images/erques.jpg" alt="Tarija City Chamber logo" width="180" height="180">
+            <img id="footer-logo" src="images/erques.webp" alt="Tarija City Chamber logo" width="180" height="180">
             <h3 id="footer-company">Tarija City Chamber</h3>
             <h4 id="sidebar-content"></h4>
         </div>
@@ -117,6 +132,8 @@
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/lastvisited.js"></script>
-    
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
